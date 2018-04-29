@@ -1,19 +1,12 @@
-import * as React from "react";
-import { render } from "react-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import createSagaMiddleware from "redux-saga";
-import app from "./reducers";
-import App from "./pages/app";
-import rootSaga from "./sagas/saga";
-
-const sagaMiddleware = createSagaMiddleware();
-const store = createStore(app, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(rootSaga);
+import * as React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import App from './pages/app'
+import { store } from './redux/store'
 
 render(
     <Provider store={store}>
         <App />
     </Provider>,
-    document.getElementById("root")
-);
+    document.getElementById('root')
+)

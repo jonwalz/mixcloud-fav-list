@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react'
 
 interface Props {
-  name: string;
+  name: string
 }
 
-export default ({ name }: Props) => <h1>Hello {name}!</h1>;
+export default ({ name }: Props) => <h1>Hello {name}!</h1>

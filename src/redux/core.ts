@@ -3,7 +3,7 @@ export interface BaseRepository<T> {
     readonly sort: ReadonlyArray<string>,
 }
 
-export interface Favorites extends BaseRepository<any> {
+export interface Favorites {
 }
 
 export interface AppState {

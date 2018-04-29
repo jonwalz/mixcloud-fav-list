@@ -10,7 +10,7 @@ export interface ReceiveFavoritesAction {
 export type ACTION = FetchFavoritesAction
 |    ReceiveFavoritesAction
 
-export const FetchFavorites = () => ({
+export const fetchFavorites = () => ({
     type: 'FETCH_FAVORITES'
 })
 
